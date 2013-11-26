@@ -1,0 +1,3 @@
+add_lunch_combo cm_p769-userdebug
+add_lunch_combo cm_p769-eng
+add_lunch_combo pac_p769-userdebug
