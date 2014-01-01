@@ -5,4 +5,4 @@ originally forked from AntonX.
 made some changes to build without errors.
 this is the base i start with on any project.
 add some stuff or change some stuff to fit whatever project.
-works on all branches of pac.
+works on all branches of pac-4.3 and under.
