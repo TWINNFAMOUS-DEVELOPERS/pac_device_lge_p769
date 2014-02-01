@@ -59,8 +59,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.compass.xml:system/etc/permissions/android.hardware.sensor.compass.xml \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
-    frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml
-
+    frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
+    frameworks/native/data/etc/android.hardware.bluetooth.xml:system/etc/permissions/android.hardware.bluetooth.xml \
+    frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml
+    
 ## GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps_brcm_conf.xml:system/etc/gps_brcm_conf.xml
@@ -121,29 +123,12 @@ PRODUCT_PACKAGES += \
     libomap_mm_library_jni \
     libtimemmgr
 
-# NFC packages
-#PRODUCT_PACKAGES += \
-#    libnfc \
-#    libnfc_jni \
-#    Nfc \
-#    Tag
-
-FRAMEWORKS_BASE_SUBDIRS += \
-	$(addsuffix /java, omapmmlib )
-
-#FRAMEWORKS_BASE_SUBDIRS += \
-#	../../$(LOCAL_PATH)/framework-addons/
-
 PRODUCT_PACKAGES += \
     libskiahwdec \
     libskiahwenc
 
 PRODUCT_PACKAGES += \
     libstagefrighthw
-
-#copy firmware
-PRODUCT_COPY_FILES += \
-  system/bluetooth/data/main.conf:system/etc/bluetooth/main.conf
 
 # Charger mode
 PRODUCT_PACKAGES += \
