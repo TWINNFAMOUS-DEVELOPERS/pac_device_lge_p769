@@ -2,7 +2,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 $(call inherit-product-if-exists, vendor/lge/p769/p769-vendor.mk)
 
-$(call inherit-product, device/common/gps/gps_eu.mk)
+$(call inherit-product, device/common/gps/gps_us.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/lge/p769/overlay
 
@@ -39,10 +39,6 @@ PRODUCT_COPY_FILES += \
 # RIL stuffs
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/ipc_channels.config:system/etc/ipc_channels.config
-
-# NFC stuffs
-#PRODUCT_COPY_FILES += \
-#    $(LOCAL_PATH)/configs/nfcee_access.xml:system/etc/nfcee_access.xml
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
