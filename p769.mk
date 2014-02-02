@@ -118,6 +118,10 @@ PRODUCT_PACKAGES += \
     libd2cmap \
     libomap_mm_library_jni \
     libtimemmgr
+    
+FRAMEWORKS_BASE_SUBDIRS += \
+	$(addsuffix /java, omapmmlib )
+
 
 PRODUCT_PACKAGES += \
     libskiahwdec \
