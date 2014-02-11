@@ -24,9 +24,9 @@
 #include <fcntl.h>
 #include <sys/mman.h>
 #include <linux/fb.h>
-#include "linux/bltsville.h"
-#include "video/dsscomp.h"
-#include "video/omap_hwc.h"
+#include <linux/bltsville.h>
+#include <video/dsscomp.h>
+#include <video/omap_hwc.h>
 
 #ifndef RGZ_TEST_INTEGRATION
 #include <cutils/log.h>
@@ -34,8 +34,8 @@
 #include <hardware/hwcomposer.h>
 #include "hal_public.h"
 #else
-#include "hwcomposer.h"
-#include "buffer_handle.h"
+#include <hwcomposer.h>
+#include <buffer_handle.h>
 #define ALIGN(x,a) (((x) + (a) - 1L) & ~((a) - 1L))
 #define HW_ALIGN   32
 #endif
